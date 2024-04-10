@@ -1,0 +1,10 @@
+schemaVersion: '2.2'
+description: install nginx
+parameters: {}
+mainSteps:
+  - action: aws:runShellScript
+    name: configureServer
+    inputs:
+      runCommand:
+        - sudo yum install -y nginx
+        - sudo systemctl start nginx
