@@ -12,7 +12,7 @@
 3. Modify the aws template (aws.yml) if necessary, updating parameters like region, prefix, etc.
 4. Deploy the stack using the AWS CLI:
 ```bash
-aws cloudformation deploy --template-file cloudformation.yml --stack-name my-aws-infrastructure --capabilities CAPABILITY_IAM
+aws cloudformation deploy --template-file aws.yml --stack-name my-aws-infrastructure --capabilities CAPABILITY_IAM
 ```
 5. Wait for the stack creation to complete.
 
